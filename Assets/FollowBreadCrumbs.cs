@@ -39,26 +39,7 @@ public class FollowBreadCrumbs : MonoBehaviour
         // var breadCrumb = breadCrumbsOnFieldOfView[0];
 
         // Pega a migalha mais próxima
-        GameObject closestBreadCrumb = null;
-
-        foreach (var checkBreadCrumb in breadCrumbsOnFieldOfView)
-        {
-            if (closestBreadCrumb == null)
-            {
-                closestBreadCrumb = checkBreadCrumb;
-            }
-            else
-            {
-                var closestDistance = Vector3.Distance(closestBreadCrumb.transform.position, transform.position);
-
-                var checkDistance = Vector3.Distance(checkBreadCrumb.transform.position, transform.position);
-
-                if (checkDistance < closestDistance)
-                {
-                    closestBreadCrumb = checkBreadCrumb;
-                }
-            }
-        }
+        var closestBreadCrumb = GetClosestBreadCrumb(breadCrumbsOnFieldOfView);
 
         if (closestBreadCrumb == null)
         {
@@ -67,14 +48,41 @@ public class FollowBreadCrumbs : MonoBehaviour
 
         // Definimos a posição destino do NavMeshAgent como sendo a posição da migalha
         navMeshAgent.destination = closestBreadCrumb.transform.position;
+    }
+    private GameObject GetClosestBreadCrumb(GameObject[] breadCrumbs)
+    {
+        // Bônus
+        return breadCrumbs.Aggregate((checkBreadCrumb, closestBreadCrumb) =>
+        {
+            var closestDistance = Vector3.Distance(closestBreadCrumb.transform.position, transform.position);
 
-        /*
-         * Checar migalha por migalha
-         * Armazenar o valor da última migalha analisada
-         * Sempre comparar a distância da última migalha que eu analisei com a migalha que estou analisando
-         * Se essa nova migalha que estou analisando estiver mais próxima que a anterior, defino como a migalha mais próximo
-         * Continuo checando até verificar todas as migalhas
-         */
+            var checkDistance = Vector3.Distance(checkBreadCrumb.transform.position, transform.position);
+
+            return checkDistance < closestDistance ? checkBreadCrumb : closestBreadCrumb;
+        });
+
+        // GameObject closestBreadCrumb = null;
+        //
+        // foreach (var checkBreadCrumb in breadCrumbs)
+        // {
+        //     if (closestBreadCrumb == null)
+        //     {
+        //         closestBreadCrumb = checkBreadCrumb;
+        //     }
+        //     else
+        //     {
+        //         var closestDistance = Vector3.Distance(closestBreadCrumb.transform.position, transform.position);
+        //
+        //         var checkDistance = Vector3.Distance(checkBreadCrumb.transform.position, transform.position);
+        //
+        //         if (checkDistance < closestDistance)
+        //         {
+        //             closestBreadCrumb = checkBreadCrumb;
+        //         }
+        //     }
+        // }
+        //
+        // return closestBreadCrumb;
     }
 
     private void OnDrawGizmosSelected()

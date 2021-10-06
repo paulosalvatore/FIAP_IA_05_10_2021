@@ -36,10 +36,45 @@ public class FollowBreadCrumbs : MonoBehaviour
         }
 
         // Pegar uma das migalhas
-        var breadCrumb = breadCrumbsOnFieldOfView[0];
+        // var breadCrumb = breadCrumbsOnFieldOfView[0];
+
+        // Pega a migalha mais próxima
+        GameObject closestBreadCrumb = null;
+
+        foreach (var checkBreadCrumb in breadCrumbsOnFieldOfView)
+        {
+            if (closestBreadCrumb == null)
+            {
+                closestBreadCrumb = checkBreadCrumb;
+            }
+            else
+            {
+                var closestDistance = Vector3.Distance(closestBreadCrumb.transform.position, transform.position);
+
+                var checkDistance = Vector3.Distance(checkBreadCrumb.transform.position, transform.position);
+
+                if (checkDistance < closestDistance)
+                {
+                    closestBreadCrumb = checkBreadCrumb;
+                }
+            }
+        }
+
+        if (closestBreadCrumb == null)
+        {
+            return;
+        }
 
         // Definimos a posição destino do NavMeshAgent como sendo a posição da migalha
-        navMeshAgent.destination = breadCrumb.transform.position;
+        navMeshAgent.destination = closestBreadCrumb.transform.position;
+
+        /*
+         * Checar migalha por migalha
+         * Armazenar o valor da última migalha analisada
+         * Sempre comparar a distância da última migalha que eu analisei com a migalha que estou analisando
+         * Se essa nova migalha que estou analisando estiver mais próxima que a anterior, defino como a migalha mais próximo
+         * Continuo checando até verificar todas as migalhas
+         */
     }
 
     private void OnDrawGizmosSelected()

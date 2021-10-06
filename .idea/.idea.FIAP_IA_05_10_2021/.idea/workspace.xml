@@ -2,28 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6a383b5-f899-4bc6-afbc-db2a84cf61d8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.FIAP_IA_05_10_2021/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.FIAP_IA_05_10_2021/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.FIAP_IA_05_10_2021/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.FIAP_IA_05_10_2021/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AI.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AI.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/BreadCrumb.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/BreadCrumb.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Floor.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Floor.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/GenerateCrumbs.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/GenerateCrumbs.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Obstacle.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Obstacle.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Player.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Player.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene/NavMesh.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene/NavMesh.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SetTarget.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SetTarget.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CollectBreadCrumb.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CollectBreadCrumb.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/FollowBreadCrumbs.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/FollowBreadCrumbs.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.FIAP_IA_05_10_2021/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FIAP_IA_05_10_2021/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BreadCrumb.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/BreadCrumb.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +20,8 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/CollectBreadCrumb.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/FollowBreadCrumbs.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/GenerateCrumbs.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1z6mnOETQcH1IHk0i41WRkjj4lu" />
@@ -85,7 +73,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1633477078658</updated>
-      <workItem from="1633477082780" duration="1566000" />
+      <workItem from="1633477082780" duration="4831000" />
     </task>
     <servers />
   </component>

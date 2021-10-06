@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6a383b5-f899-4bc6-afbc-db2a84cf61d8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/CollectBreadCrumb.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CollectBreadCrumb.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/FollowBreadCrumbs.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/FollowBreadCrumbs.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/DestroyAfterDelay.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/DestroyAfterDelay.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FIAP_IA_05_10_2021/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FIAP_IA_05_10_2021/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/BreadCrumb.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/BreadCrumb.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +16,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/CollectBreadCrumb.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DestroyAfterDelay.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/FollowBreadCrumbs.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/GenerateCrumbs.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -73,7 +69,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1633477078658</updated>
-      <workItem from="1633477082780" duration="4831000" />
+      <workItem from="1633477082780" duration="5198000" />
     </task>
     <servers />
   </component>
